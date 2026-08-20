@@ -17,7 +17,7 @@ window.SITE_CONTENT = {
   },
   nav: [
     ["Home", "#home"],
-    ["Short Term Course", "#short-term-course"],
+    ["Short Term Course", "#home"],
     ["Course Instructors", "#course-instructors"],
     ["Registration", "#registration"],
     ["Certificate", "#certificate"],

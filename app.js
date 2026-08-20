@@ -1,4 +1,22 @@
 const C = window.SITE_CONTENT || {};
+
+/* Keep hash navigation aligned directly below the sticky header */
+function syncHeaderOffset() {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+  const offset = Math.ceil(header.getBoundingClientRect().height) + 6;
+  document.documentElement.style.setProperty('--header-offset', `${offset}px`);
+}
+syncHeaderOffset();
+window.addEventListener('resize', syncHeaderOffset);
+window.addEventListener('load', () => {
+  syncHeaderOffset();
+  if (location.hash) {
+    const target = document.querySelector(location.hash);
+    if (target) requestAnimationFrame(() => target.scrollIntoView({block:'start'}));
+  }
+});
+
 const q = (selector, parent = document) => parent.querySelector(selector);
 const qa = (selector, parent = document) => [...parent.querySelectorAll(selector)];
 const arr = value => Array.isArray(value) ? value : [];
@@ -101,15 +119,16 @@ renderLogoFlash();
 const logoCycle = cycle(() => { logoIndex = (logoIndex + 1) % logos.length; renderLogoFlash(1); }, 3600);
 
 const projectTeam = arr(C.instructors);
+const spotlightTeam = projectTeam.filter(p => /Foreign Expert/i.test(p.role || '')).slice(0, 2);
 
-//* Instructor flash strip before workshop focus */
+//* Instructor flash strip before workshop focus — foreign experts only */
 const instrFlash = q('#instructor-flash');
 let flashIndex = 0;
 
 function renderInstructorFlash() {
-  if (!instrFlash || !projectTeam.length) return;
+  if (!instrFlash || !spotlightTeam.length) return;
 
-  const p = projectTeam[flashIndex];
+  const p = spotlightTeam[flashIndex];
 
   instrFlash.innerHTML = `
     <div class="flash-instructor-card from-top">
@@ -127,7 +146,7 @@ function renderInstructorFlash() {
 renderInstructorFlash();
 
 cycle(() => {
-  flashIndex = (flashIndex + 1) % projectTeam.length;
+  flashIndex = (flashIndex + 1) % spotlightTeam.length;
   renderInstructorFlash();
 }, 4300);
 
