@@ -1,6 +1,6 @@
 /* Edit this file to update all site content and links. */
 window.SITE_CONTENT = {
-  title: "International Workshop on Fair and Explainable AI",
+  title: "International Conference on Fair and Explainable AI and Data Science",
   subtitle: "A 25-Hour Short-Term Certificate Course on Fair and Explainable AI for Graph Data Mining",
   dates: "11–15 January 2027",
   venue: "Indian Institute of Technology Roorkee",
@@ -29,13 +29,13 @@ window.SITE_CONTENT = {
     ["Contact", "#contact"]
   ],
   stats: [
-    { value: "5", label: "Workshop days" },
+    { value: "5", label: "Conference days" },
     { value: "25", label: "Course hours" },
     { value: "4", label: "Course instructors" }
   ],
   news: [
-    { tag: "Workshop", title: "International Workshop on Fair and Explainable AI", detail: "11–15 January 2027 · IIT Roorkee" },
-    { tag: "Registration", title: "Workshop registration deadline", detail: "October 31, 2026" },
+    { tag: "Conference", title: "International Conference on Fair and Explainable AI and Data Science", detail: "11–15 January 2027 · IIT Roorkee" },
+    { tag: "Registration", title: "Conference registration deadline", detail: "October 31, 2026" },
     { tag: "Call for Papers · Optional", title: "Paper / Abstract submission deadline", detail: "November 15, 2026" },
     { tag: "Paper Development", title: "Paper / Abstract acceptance", detail: "December 15, 2026" },
     { tag: "Short-Term Course", title: "25-Hour certificate course for UG/PG students, Ph.D. scholars, faculty and industry professionals", detail: "Fair and Explainable AI for Graph Data Mining" }
@@ -51,7 +51,7 @@ window.SITE_CONTENT = {
   shortTermCourse: {
     heading: "Short-Term Certificate Course",
     body: [
-      "This five-day SPARC workshop brings together researchers, faculty, students, and practitioners to explore Fair and Explainable AI for graph data mining, with special emphasis on explainability, responsible AI, and network science.",
+      "This five-day SPARC Conference brings together researchers, faculty, students, and practitioners to explore Fair and Explainable AI for graph data mining, with special emphasis on explainability, responsible AI, and network science.",
       "The course combines foundational lectures, advanced technical sessions, tutorials, panel discussions, lightning talks, and open research dialogue.",
       "The programme is hosted by the Mehta Family School of Data Science and Artificial Intelligence, Indian Institute of Technology Roorkee."
     ],
@@ -71,7 +71,7 @@ window.SITE_CONTENT = {
     { image: "assets/ppt/abhijnan-chakraborty.jpg", initials: "AC", name: "Prof. Abhijnan Chakraborty", role: "Indian Expert · IIT Kharagpur", place: "India" }
   ],
   registration: {
-    deadline: "Workshop Registration Deadline – October 31, 2026",
+    deadline: "Conference Registration Deadline – October 31, 2026",
     who: "UG/PG Students, Ph.D. Scholars, Faculty, and Industry Professionals",
     fees: [
       "Offline Participants With Campus Accommodation: ₹6,500",
@@ -184,22 +184,22 @@ window.SITE_CONTENT = {
   }
 ],
   messages: [
-    { image: "assets/ppt/kamal-pant.jpg", title: "Patron", name: "Prof. Kamal Kishore Pant", designation: "Director, IIT Roorkee", text: "I am delighted to welcome you to the High-End Workshop on Fair and Explainable AI for Graph Data Mining at IIT Roorkee. This workshop reflects our commitment to advancing research in artificial intelligence, graph data mining, and trustworthy computing. I encourage you to actively participate in lectures, hands-on sessions, and discussions with experts, exchange ideas with peers, and explore approaches for fair, transparent, and explainable AI. I am confident that this workshop will foster innovation, research excellence, and responsible AI." },
-    { image: "assets/ppt/sanjeev-kumar.jpg", title: "Chairman", name: "Prof. Sanjeev Kumar", designation: "Head, MFS DS&AI, IIT Roorkee", text: "It is my pleasure to welcome you to the High-End Workshop on Fair and Explainable AI for Graph Data Mining at IIT Roorkee. This workshop offers a platform to explore graph data mining, fairness-aware AI, explainable AI, and responsible graph analytics through lectures, hands-on sessions, and discussions. Participants will gain insights into addressing bias and developing fair and transparent graph-based AI systems. I encourage you to actively engage, exchange ideas, and build research collaborations. I wish you a productive and enriching experience." },
+    { image: "assets/ppt/kamal-pant.jpg", title: "Patron", name: "Prof. Kamal Kishore Pant", designation: "Director, IIT Roorkee", text: "I am delighted to welcome you to the High-End Conference on Fair and Explainable AI for Graph Data Mining at IIT Roorkee. This Conference reflects our commitment to advancing research in artificial intelligence, graph data mining, and trustworthy computing. I encourage you to actively participate in lectures, hands-on sessions, and discussions with experts, exchange ideas with peers, and explore approaches for fair, transparent, and explainable AI. I am confident that this Conference will foster innovation, research excellence, and responsible AI." },
+    { image: "assets/ppt/sanjeev-kumar.jpg", title: "Chairman", name: "Prof. Sanjeev Kumar", designation: "Head, MFS DS&AI, IIT Roorkee", text: "It is my pleasure to welcome you to the High-End Conference on Fair and Explainable AI for Graph Data Mining at IIT Roorkee. This Conference offers a platform to explore graph data mining, fairness-aware AI, explainable AI, and responsible graph analytics through lectures, hands-on sessions, and discussions. Participants will gain insights into addressing bias and developing fair and transparent graph-based AI systems. I encourage you to actively engage, exchange ideas, and build research collaborations. I wish you a productive and enriching experience." },
     {
   image: "assets/messages/coordinator.jpg",
   initials: "NC",
   title: "Message from the National Coordinator, SPARC",
   name: "Prof. Rabibrata Mukherjee",
   designation: "National Coordinator, SPARC",
-  text: "The Scheme for Promotion of Academic and Research Collaboration (SPARC) strengthens academic and research partnerships between Indian institutions and leading international universities. It promotes the exchange of knowledge, expertise, and ideas while encouraging international collaboration and high-quality research. I am delighted to welcome you to the High-End Workshop on Fair and Explainable AI Framework for Graph Data Mining at IIT Roorkee. The workshop will provide opportunities to explore advances in AI, graph mining, and trustworthy computing, exchange ideas, and build research collaborations."
+  text: "The Scheme for Promotion of Academic and Research Collaboration (SPARC) strengthens academic and research partnerships between Indian institutions and leading international universities. It promotes the exchange of knowledge, expertise, and ideas while encouraging international collaboration and high-quality research. I am delighted to welcome you to the High-End Conference on Fair and Explainable AI Framework for Graph Data Mining at IIT Roorkee. The Conference will provide opportunities to explore advances in AI, graph mining, and trustworthy computing, exchange ideas, and build research collaborations."
 },
-    { image: "assets/ppt/gaurav-dixit.jpg", title: "Coordinating Team", name: "Prof. Gaurav Dixit", designation: "IIT Roorkee", text: "We look forward to an engaging five-day workshop with lectures, tutorials, papers, and open research dialogue.This workshop provides an academic platform to explore recent advances in fair and explainable AI for graph data mining through expert lectures, hands-on sessions, and research discussions. It aims to promote the exchange of ideas, interdisciplinary collaboration, and new research directions in fair, interpretable, and trustworthy AI for graph-structured data." }
+    { image: "assets/ppt/gaurav-dixit.jpg", title: "Coordinating Team", name: "Prof. Gaurav Dixit", designation: "IIT Roorkee", text: "We look forward to an engaging five-day Conference with lectures, tutorials, papers, and open research dialogue.This Conference provides an academic platform to explore recent advances in fair and explainable AI for graph data mining through expert lectures, hands-on sessions, and research discussions. It aims to promote the exchange of ideas, interdisciplinary collaboration, and new research directions in fair, interpretable, and trustworthy AI for graph-structured data." }
   ],
   coordinators: [
-    { image: "assets/ppt/gaurav-dixit.jpg", name: "Prof. Gaurav Dixit", about: "Academic coordination and workshop guidance" },
-    { image: "assets/co-organisers/co-organiser-1.jpg", name: "Mukesh Kumar",  about: "Participant support and workshop coordination" },
-    { image: "assets/co-organisers/co-organiser2.png", name: "Shyamal Das", about: "Participant support and workshop coordination" }
+    { image: "assets/ppt/gaurav-dixit.jpg", name: "Prof. Gaurav Dixit", about: "Academic coordination and Conference guidance" },
+    { image: "assets/co-organisers/co-organiser-1.jpg", name: "Mukesh Kumar",  about: "Participant support and Conference coordination" },
+    { image: "assets/co-organisers/co-organiser2.png", name: "Shyamal Das", about: "Participant support and Conference coordination" }
   ],
   contact: {
     email: "fair.ai.workshop@mfs.iitr.ac.in",
