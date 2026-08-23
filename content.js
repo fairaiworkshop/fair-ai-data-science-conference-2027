@@ -35,11 +35,11 @@ window.SITE_CONTENT = {
   ],
   news: [
     { tag: "Conference", title: "International Conference on Fair and Explainable AI and Data Science", detail: "11–15 January 2027 · IIT Roorkee" },
-    { tag: "Registration", title: "Conference registration deadline", detail: "October 31, 2026" },
-    { tag: "Call for Papers · Optional", title: "Paper / Abstract submission deadline", detail: "November 15, 2026" },
-    { tag: "Paper Development", title: "Paper / Abstract acceptance", detail: "December 15, 2026" },
-    { tag: "Short-Term Course", title: "25-Hour certificate course for UG/PG students, Ph.D. scholars, faculty and industry professionals", detail: "Fair and Explainable AI for Graph Data Mining" }
-  ],
+    { tag: "Registration", title: "Conference Short-Term Certificate Course-registration deadline", detail: "October 31, 2026" },
+    { tag: "Call for Papers", title: "Paper submission deadline", detail: "November 01, 2026" },
+    { tag: "Paper Development Workshop", title: "Paper acceptance", detail: "December 01, 2026" },
+    { tag: "Short-Term Course", title: "25-Hour certificate course for UG/PG students, Ph.D. scholars, faculty and industry professionals", detail: "Fair and Explainable AI for Graph Data Mining" },
+    {tag: "Limited Seats", title: "Short-Term course seats are limited; participants are encouraged to complete their registration at the earliest to secure their participation." },   ],
   logos: [
     { name: "Ministry of Education", place: "India", image: "assets/ppt/ministry-education.png" },
     { name: "SPARC", place: "India", image: "assets/ppt/sparc-logo.png" },
@@ -71,30 +71,29 @@ window.SITE_CONTENT = {
     { image: "assets/ppt/abhijnan-chakraborty.jpg", initials: "AC", name: "Prof. Abhijnan Chakraborty", role: "Indian Expert · IIT Kharagpur", place: "India" }
   ],
   registration: {
-    deadline: "Conference Registration Deadline – October 31, 2026",
+    deadline: "Conference Registration: This registration deadline applies only to participants enrolling in the 25-Hour Short-Term Certificate Course — October 31, 2026",
     who: "UG/PG Students, Ph.D. Scholars, Faculty, and Industry Professionals",
     fees: [
-      "Offline Participants With Campus Accommodation: ₹6,500",
-      "Offline Participants Without Accommodation: ₹3,000",
-      "Online Participants From India: ₹2,500",
-      "Online Participants From Outside India: ₹5,000"
+        "Offline Participants With Campus Accommodation: ₹6,500",
+        "Offline Participants Without Accommodation: ₹3,000",
+        "Online Participants From India: ₹2,500",
+        "Online Participants From Outside India: ₹5,000"
     ],
-    paymentGuidelines: "Please find the payment guidelines here: Click here",
     paymentQr: "assets/ppt/qr-payment.png",
     registrationQr: "assets/ppt/qr-registration.png"
-  },
+},
   certificates: [
     { title: "Certificate of Course Completion", image: "assets/ppt/certificate-completion.jpg", description: "For participants completing the SPARC short-term certification course." }
   ],
   paperCertificate: {
     title: "Certificate of Paper Presentation",
     image: "assets/ppt/certificate-paper.jpg",
-    description: "For participants presenting accepted papers during the optional paper development session."
+    description: "For participants presenting accepted papers during the optional paper development workshop."
   },
   callForPapers: {
     heading: "Optional Call for Paper Submissions",
     theme: "Fairness, Explainability, Responsible AI, and Network Science",
-    description: "We invite original research contributions, extended abstracts, posters, demonstrations, and case studies relevant to the paper development session.",
+    description: "We invite original research contributions, extended abstracts, posters, demonstrations, and case studies relevant to the paper development workshop.",
     topics: [
       "Computational Approaches for Fair and Explainable AI",
       "Fairness and Explainability in Graph Neural Networks",

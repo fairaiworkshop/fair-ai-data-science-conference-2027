@@ -167,6 +167,15 @@ q('#registration-card').innerHTML = `<div class="registration-copy">
   <h3>${C.registration?.deadline || ''}</h3>
   <ul>${arr(C.registration?.fees).map(f => `<li>${f}</li>`).join('')}</ul>
   <p>${C.registration?.paymentGuidelines || ''}</p>
+   <div class="registration-note">
+    <strong>*Registration Note:</strong>
+    A single registration fee applies. Following registration, participants may choose to attend the
+    <strong>25-Hour Short-Term Certificate Course only</strong>,
+    the <strong>Conference Paper Presentation only</strong>, or <strong>both</strong>, according to their preference.
+    <span class="limited-seats">
+      Short-Term course seats are limited; participants are encouraged to complete their registration at the earliest to secure their participation.
+    </span>
+  </div>
 </div>
 
 <div class="qr-center-wrap" aria-label="Registration and payment QR codes">
