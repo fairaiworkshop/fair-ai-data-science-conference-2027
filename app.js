@@ -4,7 +4,7 @@ const C = window.SITE_CONTENT || {};
 function syncHeaderOffset() {
   const header = document.querySelector('.site-header');
   if (!header) return;
-  const offset = Math.ceil(header.getBoundingClientRect().height) + 6;
+  const offset = Math.ceil(header.getBoundingClientRect().height);
   document.documentElement.style.setProperty('--header-offset', `${offset}px`);
 }
 syncHeaderOffset();
@@ -91,32 +91,67 @@ function renderLatestNews(direction=1) {
   qa('.flash-dots button', newsBox).forEach(btn => btn.addEventListener('click', () => { newsIndex = Number(btn.dataset.index); renderLatestNews(1); newsCycle.restart(); }));
 }
 renderLatestNews();
-const newsCycle = cycle(() => { newsIndex = (newsIndex + 1) % news.length; renderLatestNews(1); }, 4200);
+const newsCycle = cycle(() => { newsIndex = (newsIndex + 1) % news.length; renderLatestNews(1); }, 6500);
 
-/* Collaborating institutions flash below Latest News */
-const logos = arr(C.logos);
-const logoBox = q('#logo-flash');
-let logoIndex = 0;
-function renderLogoFlash(direction=1) {
-  if (!logoBox) return;
-  if (!logos.length) { logoBox.innerHTML = '<p class="empty-state">Logos will be added soon.</p>'; return; }
-  const item = logos[logoIndex];
-  logoBox.innerHTML = `<div class="logo-stage ${direction < 0 ? 'from-left' : 'from-top'}">
-    <img src="${item.image}" alt="${item.name}">
-    <h3>${item.name}</h3>
-    <p>${item.place}</p>
-  </div>
-  <div class="flash-controls">
-    <button id="logo-prev" aria-label="Previous logo">←</button>
-    <div class="flash-dots">${simpleDots(logos, logoIndex)}</div>
-    <button id="logo-next" aria-label="Next logo">→</button>
-  </div>`;
-  q('#logo-prev')?.addEventListener('click', () => { logoIndex = (logoIndex - 1 + logos.length) % logos.length; renderLogoFlash(-1); logoCycle.restart(); });
-  q('#logo-next')?.addEventListener('click', () => { logoIndex = (logoIndex + 1) % logos.length; renderLogoFlash(1); logoCycle.restart(); });
-  qa('.flash-dots button', logoBox).forEach(btn => btn.addEventListener('click', () => { logoIndex = Number(btn.dataset.index); renderLogoFlash(1); logoCycle.restart(); }));
+/* Collaborating organizations — hierarchical two-part logo carousel */
+const allLogos = arr(C.logos);
+
+const institutionLogos = [
+  allLogos.find(x => /IIT Roorkee/i.test(x.name || '')),
+  allLogos.find(x => /IIT Kharagpur/i.test(x.name || '')),
+  allLogos.find(x => /Eindhoven University of Technology/i.test(x.name || '')),
+  allLogos.find(x => /Leiden University/i.test(x.name || ''))
+].filter(Boolean);
+
+function setupLogoCarousel(boxSelector, items, idPrefix, delay=3600) {
+  const box = q(boxSelector);
+  if (!box) return;
+  let index = 0;
+  let carouselCycle;
+
+  function render(direction=1) {
+    if (!items.length) {
+      box.innerHTML = '<p class="empty-state">Logos will be added soon.</p>';
+      return;
+    }
+    const item = items[index];
+    box.innerHTML = `<div class="logo-stage ${direction < 0 ? 'from-left' : 'from-top'}">
+      <img src="${item.image}" alt="${item.name}">
+      <h3>${item.name}</h3>
+      <p>${item.place || ''}</p>
+    </div>
+    <div class="flash-controls compact-logo-controls">
+      <button id="${idPrefix}-prev" aria-label="Previous logo">←</button>
+      <div class="flash-dots">${simpleDots(items, index)}</div>
+      <button id="${idPrefix}-next" aria-label="Next logo">→</button>
+    </div>`;
+
+    q(`#${idPrefix}-prev`)?.addEventListener('click', () => {
+      index = (index - 1 + items.length) % items.length;
+      render(-1);
+      carouselCycle?.restart();
+    });
+    q(`#${idPrefix}-next`)?.addEventListener('click', () => {
+      index = (index + 1) % items.length;
+      render(1);
+      carouselCycle?.restart();
+    });
+    qa('.flash-dots button', box).forEach(btn => btn.addEventListener('click', () => {
+      index = Number(btn.dataset.index);
+      render(1);
+      carouselCycle?.restart();
+    }));
+  }
+
+  render();
+  carouselCycle = cycle(() => {
+    index = (index + 1) % items.length;
+    render(1);
+  }, delay);
 }
-renderLogoFlash();
-const logoCycle = cycle(() => { logoIndex = (logoIndex + 1) % logos.length; renderLogoFlash(1); }, 3600);
+
+/* Bottom: IIT Roorkee → IIT Kharagpur → TU/e → Leiden University */
+setupLogoCarousel('#logo-flash-institutions', institutionLogos, 'institution-logo', 5200);
 
 const projectTeam = arr(C.instructors);
 const spotlightTeam = projectTeam.filter(p => /Foreign Expert/i.test(p.role || '')).slice(0, 2);
@@ -148,7 +183,7 @@ renderInstructorFlash();
 cycle(() => {
   flashIndex = (flashIndex + 1) % spotlightTeam.length;
   renderInstructorFlash();
-}, 4300);
+}, 6500);
 
 /* Short Term Course */
 q('#course-copy').innerHTML = arr(C.shortTermCourse?.body).map(p => `<p>${p}</p>`).join('');
@@ -251,7 +286,7 @@ q('#message-prev').onclick = () => { messageIndex = (messageIndex - 1 + messages
 q('#message-next').onclick = () => { messageIndex = (messageIndex + 1) % messages.length; renderMessage(1); messageCycle.restart(); };
 q('#message-dots').onclick = e => { if (!e.target.matches('button')) return; messageIndex = Number(e.target.dataset.index); renderMessage(1); messageCycle.restart(); };
 renderMessage();
-const messageCycle = cycle(() => { messageIndex = (messageIndex + 1) % messages.length; renderMessage(1); }, 10000);
+const messageCycle = cycle(() => { messageIndex = (messageIndex + 1) % messages.length; renderMessage(1); }, 15000);
 
 //* Coordinators */
 q('#coordinator-grid').innerHTML = arr(C.coordinators)

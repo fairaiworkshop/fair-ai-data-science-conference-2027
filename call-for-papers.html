@@ -436,6 +436,15 @@
   </footer>
 
   <script>
+    function syncCfpHeaderOffset() {
+      const header = document.querySelector('.site-header');
+      if (!header) return;
+      document.documentElement.style.setProperty('--header-offset', `${Math.ceil(header.getBoundingClientRect().height)}px`);
+    }
+    syncCfpHeaderOffset();
+    window.addEventListener('resize', syncCfpHeaderOffset);
+    window.addEventListener('load', syncCfpHeaderOffset);
+
     const nav = document.querySelector('#main-nav');
     const toggle = document.querySelector('.nav-toggle');
     if (nav && toggle) {
@@ -467,7 +476,7 @@
 
     function restartCfpNewsTimer() {
       clearInterval(cfpNewsTimer);
-      cfpNewsTimer = setInterval(() => renderCfpNews(cfpNewsIndex + 1), 6500);
+      cfpNewsTimer = setInterval(() => renderCfpNews(cfpNewsIndex + 1), 9000);
     }
 
     if (cfpNewsItems.length && cfpNewsDots) {
@@ -501,7 +510,7 @@
       card.innerHTML = `<div class="message-slide"><img class="message-photo" src="${m.image}" alt="${m.name}"><div><h3>${m.title}</h3><p class="name">${m.name}</p><p class="meta">${m.designation}</p></div><blockquote>“${m.text}”</blockquote></div><div class="auto-progress message-progress"><span></span></div>`;
       dots.innerHTML = cfpMessages.map((_,i)=>`<button type="button" class="${i===cfpMessageIndex?'active':''}" data-index="${i}" aria-label="Show message ${i+1}"></button>`).join('');
     }
-    function restartCfpMessageTimer(){ clearInterval(cfpMessageTimer); cfpMessageTimer=setInterval(()=>{cfpMessageIndex=(cfpMessageIndex+1)%cfpMessages.length;renderCfpMessage();},10000); }
+    function restartCfpMessageTimer(){ clearInterval(cfpMessageTimer); cfpMessageTimer=setInterval(()=>{cfpMessageIndex=(cfpMessageIndex+1)%cfpMessages.length;renderCfpMessage();},15000); }
     document.querySelector('#cfp-message-prev')?.addEventListener('click',()=>{cfpMessageIndex=(cfpMessageIndex-1+cfpMessages.length)%cfpMessages.length;renderCfpMessage();restartCfpMessageTimer();});
     document.querySelector('#cfp-message-next')?.addEventListener('click',()=>{cfpMessageIndex=(cfpMessageIndex+1)%cfpMessages.length;renderCfpMessage();restartCfpMessageTimer();});
     document.querySelector('#cfp-message-dots')?.addEventListener('click',e=>{if(!e.target.matches('button'))return;cfpMessageIndex=Number(e.target.dataset.index);renderCfpMessage();restartCfpMessageTimer();});
