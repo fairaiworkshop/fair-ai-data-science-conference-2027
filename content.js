@@ -10,7 +10,7 @@ window.SITE_CONTENT = {
     register: "https://forms.gle/DCHC2Ym4eAs2hB4K9",
     payment: "assets/ppt/qr-payment.png",
     paymentSteps: "assets/documents/payment-steps.pdf",
-    brochure: "assets/documents/SPARC_2027_Brochure.pdf",
+    /*brochure: "assets/documents/SPARC_2027_Brochure.pdf",*/
     poster: "assets/documents/SPARC_2027_Poster.pdf",
     email: "mailto:fair.ai.workshop@mfs.iitr.ac.in",
     map: "https://maps.app.goo.gl/gneG71w3119MF7zp9"
@@ -83,11 +83,12 @@ window.SITE_CONTENT = {
     registrationQr: "assets/ppt/qr-registration.png"
 },
   certificates: [
-    { title: "Certificate of Course Completion", image: "assets/ppt/certificate-completion.jpg", description: "For participants completing the SPARC short-term certification course." }
+    { title: "Certificate of Course Completion", /*image: "assets/ppt/certificate-completion.jpg",*/
+       description: "For participants completing the SPARC short-term certification course." }
   ],
   paperCertificate: {
     title: "Certificate of Paper Presentation",
-    image: "assets/ppt/certificate-paper.jpg",
+    /*image: "assets/ppt/certificate-paper.jpg",*/
     description: "For participants presenting accepted papers during the optional paper development workshop."
   },
   callForPapers: {
