@@ -66,9 +66,9 @@ window.SITE_CONTENT = {
   },
   instructors: [
     { image: "assets/ppt/mykola-pechenizkiy.jpg", initials: "MP", name: "Prof. Mykola Pechenizkiy", role: "Foreign Expert · Eindhoven University of Technology", place: "Netherlands"},
-    { image: "assets/ppt/akrati-saxena.jpg", initials: "AS", name: "Prof. Akrati Saxena", role: "Foreign Expert · University of Leiden", place: "Netherlands" },
-    { image: "assets/ppt/gaurav-dixit.jpg", initials: "GD", name: "Prof. Gaurav Dixit", role: "Indian Expert · IIT Roorkee", place: "India" },
-    { image: "assets/ppt/abhijnan-chakraborty.jpg", initials: "AC", name: "Prof. Abhijnan Chakraborty", role: "Indian Expert · IIT Kharagpur", place: "India" }
+    { image: "assets/ppt/akrati-saxena.jpg", initials: "AS", name: "Dr. Akrati Saxena", role: "Foreign Expert · University of Leiden", place: "Netherlands" },
+    { image: "assets/ppt/gaurav-dixit.jpg", initials: "GD", name: "Dr. Gaurav Dixit", role: "Indian Expert · IIT Roorkee", place: "India" },
+    { image: "assets/ppt/abhijnan-chakraborty.jpg", initials: "AC", name: "Dr. Abhijnan Chakraborty", role: "Indian Expert · IIT Kharagpur", place: "India" }
   ],
   registration: {
     deadline: "Conference Registration: This registration deadline applies only to participants enrolling in the 25-Hour Short-Term Certificate Course — October 31, 2026",
@@ -194,10 +194,10 @@ window.SITE_CONTENT = {
   name: "Prof. Rabibrata Mukherjee",
   designation: "National Coordinator, SPARC",
   text: "The Scheme for Promotion of Academic and Research Collaboration (SPARC) strengthens academic and research partnerships between Indian institutions and leading international universities. It promotes the exchange of knowledge, expertise, and ideas while encouraging international collaboration and high-quality research. I am delighted to welcome you to the International Conference on Fair and Explainable AI and Data Science at IIT Roorkee. The Conference will provide opportunities to exchange ideas and build research collaborations in AI, data science, and computing."},
-    { image: "assets/ppt/gaurav-dixit.jpg", title: "Coordinating Team", name: "Prof. Gaurav Dixit", designation: "IIT Roorkee", text: "We look forward to an engaging five-day Conference with lectures, tutorials, papers, and open research dialogue.This Conference provides an academic platform to explore recent advances in fair and explainable AI for graph data mining through expert lectures, hands-on sessions, and research discussions. It aims to promote the exchange of ideas, interdisciplinary collaboration, and new research directions in fair, interpretable, and trustworthy AI for graph-structured data." }
+    { image: "assets/ppt/gaurav-dixit.jpg", title: "Coordinating Team", name: "Dr. Gaurav Dixit", designation: "IIT Roorkee", text: "We look forward to an engaging five-day Conference with lectures, tutorials, papers, and open research dialogue.This Conference provides an academic platform to explore recent advances in fair and explainable AI for graph data mining through expert lectures, hands-on sessions, and research discussions. It aims to promote the exchange of ideas, interdisciplinary collaboration, and new research directions in fair, interpretable, and trustworthy AI for graph-structured data." }
   ],
   coordinators: [
-    { image: "assets/ppt/gaurav-dixit.jpg", name: "Prof. Gaurav Dixit", about: "Academic coordination and Conference guidance" },
+    { image: "assets/ppt/gaurav-dixit.jpg", name: "Dr. Gaurav Dixit", about: "Academic coordination and Conference guidance" },
     { image: "assets/co-organisers/co-organiser-1.jpg", name: "Mukesh Kumar",  about: "Participant support and Conference coordination" },
     { image: "assets/co-organisers/co-organiser2.png", name: "Shyamal Das", about: "Participant support and Conference coordination" }
   ],
