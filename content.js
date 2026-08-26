@@ -83,7 +83,8 @@ window.SITE_CONTENT = {
     registrationQr: "assets/ppt/qr-registration.png"
 },
   certificates: [
-    { title: "Certificate of Course Completion", /*image: "assets/ppt/certificate-completion.jpg",*/
+    { title: "Certificate of Course Completion", 
+      /*image: "assets/ppt/certificate-completion.jpg",*/
        description: "For participants completing the SPARC short-term certification course." }
   ],
   paperCertificate: {
