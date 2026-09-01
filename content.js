@@ -84,12 +84,12 @@ window.SITE_CONTENT = {
 },
   certificates: [
     { title: "Certificate of Course Completion", 
-      /*image: "assets/ppt/certificate-completion.jpg",*/
+      image: "assets/ppt/certificate-completion.jpg",
        description: "For participants completing the SPARC short-term certification course." }
   ],
   paperCertificate: {
     title: "Certificate of Paper Presentation",
-    /*image: "assets/ppt/certificate-paper.jpg",*/
+    image: "assets/ppt/certificate-paper.jpg",
     description: "For participants presenting accepted papers during the optional paper development workshop."
   },
   callForPapers: {
