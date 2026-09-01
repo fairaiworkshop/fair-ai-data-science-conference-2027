@@ -56,8 +56,12 @@ function simpleDots(items, active) {
 }
 
 /* Navigation */
-q('#main-nav').innerHTML = arr(C.nav).map(([name, href]) => `<a href="${href}">${name}</a>`).join('');
-q('#footer-links').innerHTML = arr(C.nav).slice(1).map(([name, href]) => `<a href="${href}">${name}</a>`).join('');
+const normalizedNav = arr(C.nav).map(([name, href]) => [
+  name,
+  href === 'call-for-papers.html' ? 'about.html' : href
+]);
+q('#main-nav').innerHTML = normalizedNav.map(([name, href]) => `<a href="${href}">${name}</a>`).join('');
+q('#footer-links').innerHTML = normalizedNav.slice(1).map(([name, href]) => `<a href="${href}">${name}</a>`).join('');
 q('#quick-stats').innerHTML = arr(C.stats).map(s => `<div><b>${s.value}</b><span>${s.label}</span></div>`).join('');
 q('#year').textContent = new Date().getFullYear();
 
@@ -240,7 +244,7 @@ q('#registration-card').innerHTML = `<div class="registration-copy">
 /* Certificates */
 q('#certificate-grid').innerHTML = arr(C.certificates).map(c => `<article class="certificate-card certificate-card-single reveal"><img src="${c.image}" alt="${c.title}"><div><h3>${c.title}</h3><p>${c.description}</p></div></article>`).join('');
 
-/* Call for papers is displayed only on call-for-papers.html */
+/* Call for papers is displayed only on about.html */
 const cfpDescription = q('#cfp-description');
 const cfpCard = q('#cfp-card');
 if (cfpDescription) cfpDescription.textContent = C.callForPapers?.description || '';
