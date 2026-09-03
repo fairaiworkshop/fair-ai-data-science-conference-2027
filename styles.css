@@ -473,3 +473,12 @@
     min-height: auto;
   }
 }
+
+.keynote-card .keynote-photo {
+  width: 80px;
+  height: 80px;
+  flex: 0 0 80px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
