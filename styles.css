@@ -482,3 +482,6 @@
   border-radius: 14px;
   display: block;
 }
+.juliana-photo {
+    object-position: center top;
+}
