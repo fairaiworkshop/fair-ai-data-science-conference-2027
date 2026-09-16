@@ -253,28 +253,72 @@
 
         <div class="submission-layout">
           <article class="submission-main-card">
-            <div class="submission-step"><b>01</b><div><h3>Prepare your manuscript</h3><p>Use the official Springer Computer Science Proceedings author instructions and templates. LaTeX and Microsoft Word templates are available from Springer Nature.</p></div></div>
-            <div class="submission-step"><b>02</b><div><h3>Select the appropriate track and paper category</h3><p>Choose the conference track that best matches the contribution and identify whether the submission is a Full Paper or a Short Paper.</p></div></div>
-            <div class="submission-step"><b>03</b><div><h3>Submit through the conference submission system</h3><p>The conference-specific online submission portal will be announced/activated by the organizers. Springer Nature conference submission services may be used for collecting and managing manuscripts.</p></div></div>
-            <div class="submission-step"><b>04</b><div><h3>Peer review and decision</h3><p>Submissions will undergo a single-blind peer-review process. Authors will receive the decision and any revision instructions through the conference submission system.</p></div></div>
-          </article>
+            <!-- PUBLICATION OPTION DISABLED UNTIL PUBLISHER APPROVAL
+<div class="submission-step">
+              <b>01</b>
+              <div>
+                <h3>Springer Proceedings</h3>
+                <p>Springer proceedings publication has been requested and is subject to approval. Authors should prepare manuscripts using the official Springer Computer Science Proceedings instructions and templates. LaTeX and Microsoft Word templates are available from Springer Nature.</p>
+                <p style="margin-top:10px;">
+                  <a href="https://link.springer.com/series/558/information-for-authors-and-editors"
+                     target="_blank" rel="noopener"
+                     style="color:var(--red);font-weight:800;">Springer Guidelines for Authors ↗</a>
+                </p>
+              </div>
+            </div>
+            -->
+            <!-- PUBLICATION OPTION DISABLED UNTIL PUBLISHER APPROVAL
+<div class="submission-step">
+              <b>02</b>
+              <div>
+                <h3>IEEE Xplore Publication</h3>
+                <p>IEEE Xplore publication has also been requested and is subject to approval. If approved, peer-reviewed and selected papers will be considered for publication in the conference proceedings, subject to IEEE quality, formatting, and compliance requirements.</p>
+                <p style="margin-top:8px;">The final publication venue will be enabled and announced after confirmation from the respective publisher.</p>
+              </div>
+            </div>
+            -->
 
+            <div class="submission-step">
+              <b>01</b>
+              <div>
+                <h3>Prepare and submit your manuscript</h3>
+                <p>Choose the conference track that best matches the contribution and identify whether the submission is a Full Paper or a Short Paper. Manuscripts must follow the formatting requirements of the publication route confirmed by the organizers.</p>
+              </div>
+            </div>
+
+            <div class="submission-step">
+              <b>02</b>
+              <div>
+                <h3>Peer review and decision</h3>
+                <p>Submissions will undergo a single-blind peer-review process. Authors will receive the decision and any revision instructions through the conference submission system.</p>
+              </div>
+            </div>
+          </article>
           <aside class="author-links-card">
-            <p class="mini-label">Author Resources</p>
-            <h3>Springer Proceedings Guidelines</h3>
-            <p>Use the Springer Nature Computer Science Proceedings guidelines and official templates when preparing your manuscript.</p>
+            <p class="mini-label">Submission</p>
+            <h3>CMT Acknowledgement</h3>
+            <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
+
             <a class="btn btn-primary author-resource-btn"
-               href="https://link.springer.com/series/558/information-for-authors-and-editors"
-               target="_blank" rel="noopener">Guidelines for Authors ↗</a>
+               href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
+               target="_blank" rel="noopener">Learn More About Microsoft CMT ↗</a>
+
+            <!-- CMT manuscript submission link will be enabled only after the official conference CMT portal is approved. -->
+            <div class="btn btn-secondary author-resource-btn"
+                 aria-disabled="true"
+                 style="cursor:not-allowed;pointer-events:none;opacity:.72;">
+              Submit Manuscript
+            </div>
+
             <a class="btn btn-secondary author-resource-btn"
-               href="https://equinocs.springernature.com/"
-               target="_blank" rel="noopener">Springer Submission Service ↗</a>
-            <small>Conference-specific submission access will be posted here when activated.</small>
+               href="#paper-categories">Submission Guidelines</a>
+
+            <small>The conference-specific CMT submission route can be updated when the final publication arrangement is confirmed.</small>
           </aside>
         </div>
 
         <div class="submission-detail-grid">
-          <article class="submission-detail-card">
+          <article class="submission-detail-card" id="paper-categories">
             <p class="mini-label">Paper Categories</p>
             <h3>Accepted submission types</h3>
             <ul>
@@ -283,7 +327,8 @@
             </ul>
           </article>
 
-          <article class="submission-detail-card">
+          <!-- SPRINGER-SPECIFIC FORMAT DISABLED UNTIL PUBLICATION APPROVAL
+<article class="submission-detail-card">
             <p class="mini-label">Formatting &amp; Page Limits</p>
             <h3>Springer Proceedings Format</h3>
             <ul>
@@ -295,6 +340,7 @@
               <li>Final accepted papers may require editable source files and a signed License-to-Publish form.</li>
             </ul>
           </article>
+          -->
 
           <article class="submission-detail-card">
             <p class="mini-label">Review Process</p>
