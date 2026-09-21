@@ -485,3 +485,14 @@
 .juliana-photo {
     object-position: center 25%;
 }
+.keynote-talk-title {
+  margin-top: 18px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.keynote-talk-title strong {
+  color: #000000;
+}
