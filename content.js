@@ -75,6 +75,7 @@ window.SITE_CONTENT = {
     who: "UG/PG Students, Ph.D. Scholars, Faculty, and Industry Professionals",
     fees: [
         "Offline Participants With Campus Accommodation (Double Sharing): ₹6,500",
+        "Offline Participants With Campus Accommodation (Single Room): ₹10,000",
         "Offline Participants Without Accommodation: ₹3,000",
         "Online Participants From India: ₹2,500",
         "Online Participants From Outside India: ₹5,000"
