@@ -73,13 +73,13 @@ window.SITE_CONTENT = {
   registration: {
     deadline: "Conference Registration: This registration deadline applies only to participants enrolling in the 25-Hour Short-Term Certificate Course — October 31, 2026",
     who: "UG/PG Students, Ph.D. Scholars, Faculty, and Industry Professionals",
-    fees*: [
+    fees: [
         "Offline Participants With Campus Accommodation (Double Sharing): ₹8,500",
         "Offline Participants With Campus Accommodation (Single Room): ₹12,500",
         "Offline Participants Without Accommodation: ₹3,000",
         "Online Participants From India: ₹2,500",
         "Online Participants From Outside India: ₹5,000"
-      *:  The registration fee has been revised due to the updated IIT Roorkee Guest House booking charges.
+      
     ],
     paymentQr: "assets/ppt/qr-payment.png",
     registrationQr: "assets/ppt/qr-registration.png"
