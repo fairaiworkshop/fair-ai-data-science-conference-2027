@@ -74,8 +74,8 @@ window.SITE_CONTENT = {
     deadline: "Conference Registration: This registration deadline applies only to participants enrolling in the 25-Hour Short-Term Certificate Course — October 31, 2026",
     who: "UG/PG Students, Ph.D. Scholars, Faculty, and Industry Professionals",
     fees: [
-        "Offline Participants With Campus Accommodation (Double Sharing): ₹6,500",
-        "Offline Participants With Campus Accommodation (Single Room): ₹10,000",
+        "Offline Participants With Campus Accommodation (Double Sharing): ₹8,500",
+        "Offline Participants With Campus Accommodation (Single Room): ₹12,500",
         "Offline Participants Without Accommodation: ₹3,000",
         "Online Participants From India: ₹2,500",
         "Online Participants From Outside India: ₹5,000"
