@@ -490,3 +490,64 @@
   color: #000000 !important;
   font-weight: 800 !important;
 }
+<style>
+  .keyword-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #171717;
+    background: #fff;
+  }
+
+  .keyword-table th,
+  .keyword-table td {
+    border: 1px solid #dedede;
+    padding: 22px 26px;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: break-word;
+  }
+
+  .keyword-table th {
+    background: #f0f0f0;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .keyword-table td {
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  .keyword-table th:first-child,
+  .keyword-table td:first-child {
+    width: 40%;
+  }
+
+  .keyword-table td:first-child {
+    font-weight: 600;
+  }
+
+  .keyword-table .keyword-separator {
+    color: #777;
+    padding: 0 5px;
+  }
+
+  @media (max-width: 600px) {
+    .keyword-table th,
+    .keyword-table td {
+      padding: 13px 10px;
+      font-size: 15px;
+    }
+
+    .keyword-table th {
+      font-size: 18px;
+    }
+
+    .keyword-table th:first-child,
+    .keyword-table td:first-child {
+      width: 38%;
+    }
+  }
+</style>
