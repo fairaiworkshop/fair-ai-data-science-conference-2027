@@ -116,9 +116,9 @@ window.SITE_CONTENT = {
     title: "Panel Discussion",
     subtitle: "Fair and Explainable AI Applications for Development",
     speakers: [
-      { image: "assets/ppt/speaker-placeholder.jpg", name: "Expert 1", role: "Panel Speaker", topic: "To be announced" },
-      { image: "assets/ppt/speaker-placeholder.jpg", name: "Expert 2", role: "Panel Speaker", topic: "To be announced" },
-      { image: "assets/ppt/speaker-placeholder.jpg", name: "Expert 3", role: "Panel Speaker", topic: "To be announced" }
+      { image: "assets/ppt/mykola-pechenizkiy.jpg", name: "Prof. Mykola Pechenizkiy", role: "Foreign Expert", topic: "To be announced" },
+      { image: "assets/ppt/Nitin_Agarwal.jpg", name: " Prof. Nitin Agarwal", role: "Foreign Expert", topic: "To be announced" },
+      { image: "assets/ppt/akrati-saxena.jpg", name: "Dr. Akrati Saxena", role: "Foreign Expert", topic: "To be announced" }
     ]
   },
   schedule: [
