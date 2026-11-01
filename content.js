@@ -35,8 +35,8 @@ window.SITE_CONTENT = {
   ],
   news: [
     { tag: "Conference", title: "International Conference on Fair and Explainable AI and Data Science", detail: "11–15 January 2027 · IIT Roorkee" },
-    { tag: "Registration", title: "Conference Short-Term Certificate Course-registration deadline", detail: "October 31, 2026" },
-    { tag: "Call for Papers", title: "Paper submission deadline", detail: "November 01, 2026" },
+    { tag: "Registration", title: "Conference Short-Term Certificate Course-registration deadline", detail: "November 30, 2026" },
+    { tag: "Call for Papers", title: "Paper submission deadline", detail: "November 15, 2026" },
     { tag: "Paper Development Workshop", title: "Paper acceptance", detail: "December 01, 2026" },
     { tag: "Short-Term Course", title: "25-Hour certificate course for UG/PG students, Ph.D. scholars, faculty and industry professionals", detail: "Fair and Explainable AI for Graph Data Mining" },
     {tag: "Limited Seats", title: "Short-Term course seats are limited; participants are encouraged to complete their registration at the earliest to secure their participation." },   ],
