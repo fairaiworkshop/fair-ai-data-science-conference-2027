@@ -71,7 +71,7 @@ window.SITE_CONTENT = {
     { image: "assets/ppt/abhijnan-chakraborty.jpg", initials: "AC", name: "Dr. Abhijnan Chakraborty", role: "Indian Expert · IIT Kharagpur", place: "India" }
   ],
   registration: {
-    deadline: "Conference Registration: This registration deadline applies only to participants enrolling in the 25-Hour Short-Term Certificate Course — October 31, 2026",
+    deadline: "Conference Registration: This registration deadline applies only to participants enrolling in the 25-Hour Short-Term Certificate Course — December 01, 2026",
     who: "UG/PG Students, Ph.D. Scholars, Faculty, and Industry Professionals",
     fees: [
         "Offline Participants With Campus Accommodation (Double Sharing): ₹8,500",
