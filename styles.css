@@ -551,3 +551,30 @@
     }
   }
 </style>
+
+
+
+/* Keep all keynote speaker cards identical */
+.keynote-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.keynote-grid .keynote-card {
+    grid-column: auto !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Keep speaker photographs consistent */
+.keynote-grid .keynote-photo {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+
+
